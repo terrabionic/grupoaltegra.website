@@ -1,0 +1,35 @@
+@mixin mediaquery($breakpoint) {
+  @if $breakpoint == "small" {
+    @media screen and (max-width: $small-breakpoint) {
+      @content;
+    }
+  }
+  @else if $breakpoint == "medium" {
+      @content;
+    @media screen and (max-width: $medium-breakpoint) {
+    }
+  }
+  @else if $breakpoint == "large" {
+    @media screen and (min-width: $large-breakpoint) {
+      @content;
+    }
+  }
+  @else {
+    @media screen and (max-width: $breakpoint) {
+      @content;
+    }
+  }
+}
+
+// BEM Selectors
+@mixin element($element) {
+  &__#{$element} {
+    @content;
+  }
+}
+
+@mixin modifier($modifier) {
+  &--#{$modifier} {
+    @content;
+  }
+}

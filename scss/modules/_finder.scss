@@ -1,0 +1,22 @@
+.finder {
+  border-radius: 8px;
+  border: 2px solid white;
+  padding-bottom: 3px;
+  padding-right: 8px;
+  padding-top: 8px;
+
+  button {
+    padding: 0;
+    font-size: 2rem;
+    background-color: initial;
+    margin: 0;
+  }
+
+  input {
+    background: transparent !important;
+    border: none;
+    color: white;
+    font-size: 18px;
+    margin: 0;
+  }
+}

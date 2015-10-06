@@ -1,0 +1,11 @@
+.clients {
+  background: $link-water;
+  color: $fountain-blue;
+  padding: 4rem 0;
+
+  @include element(title) {
+    color: $bay-of-many;
+    text-transform: uppercase;
+  }
+
+}

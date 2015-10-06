@@ -1,0 +1,37 @@
+%full-bg {
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+%pseudo-element {
+  content: "";
+  position: absolute;
+}
+
+
+// Center in the unknown
+%parent-centered {
+  font-size: 0;
+  text-align: center;
+}
+
+%ghost-nudged {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  margin-right: -0.25em; /* Adjusts for spacing */
+  vertical-align: middle;
+}
+
+%element-centered {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+%title-gray {
+  color: $bombay;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}

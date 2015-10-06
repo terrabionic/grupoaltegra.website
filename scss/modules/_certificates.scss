@@ -1,0 +1,7 @@
+.certificates {
+  padding: 2rem 0;
+
+  @include element(title) {
+    @extend %title-gray;
+  }
+}

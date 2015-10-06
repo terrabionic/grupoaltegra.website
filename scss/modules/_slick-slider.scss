@@ -1,0 +1,32 @@
+.slick-slider {
+
+  * {
+    outline: none;
+  }
+
+  .slick-dots {
+    margin: 0;
+    bottom: -1rem;
+
+    li {
+      margin: 0;
+    }
+
+    button {
+      &:before {
+        content: "■";
+        font-size: 1.5rem;
+      }
+    }
+
+    .slick-active {
+      button {
+        &:before {
+          opacity: 1;
+          color: $bay-of-many;
+        }
+      }
+    }
+  }
+
+}

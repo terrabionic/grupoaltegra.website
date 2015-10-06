@@ -1,0 +1,19 @@
+.site-footer {
+  background: $midnight;
+  padding-top: 2rem;
+
+  @include element(logo) {
+    display: inline-block;
+    margin-bottom: 2rem;
+  }
+
+  h5 {
+    border-top: 1px solid white;
+    color: white;
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+}

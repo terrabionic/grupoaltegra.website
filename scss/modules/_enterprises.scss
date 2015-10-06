@@ -1,0 +1,18 @@
+.enterprises {
+
+  @include element(item) {
+    @extend %parent-centered;
+    text-align: center;
+
+    &:before {
+      @extend %ghost-nudged;
+      height: 54px;
+    }
+
+    a {
+      @extend %element-centered;
+    }
+
+  }
+
+}

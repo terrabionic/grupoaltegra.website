@@ -1,0 +1,47 @@
+.resource {
+  display: inline-block;
+  font-size: 1rem;
+  position: relative;
+  width: 20%;
+
+  &:before {
+    @extend %pseudo-element;
+    height: 3rem;
+    left: 0;
+    top: -3rem;
+    width: 100%;
+  }
+
+  &:hover {
+    .resource__overlay {
+      background: transparent;
+    }
+    .resource__content {
+      @include linear-gradient(lighten($midnight, 7%), $midnight);
+    }
+    &:before {
+      @include linear-gradient(to top, lighten($midnight, 7%), $midnight);
+    }
+  }
+
+  @include element(overlay) {
+    @include transition(all .3s ease);
+    background: rgba($midnight, .5);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  @include element(title) {
+    padding-top: 1rem;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  @include element(description) {
+    font-size: 14px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,25 @@
+.wpcf7 {
+  input[type="submit"] {
+    height: 37px;
+    line-height: 37px;
+    padding-bottom: 0;
+    padding-top: 0;
+    margin: 0;
+  }
+  p {
+    margin: 0;
+  }
+
+  input[type="email"],
+  input[type="text"],
+  textarea {
+    @include placeholder {
+      color: $midnight;
+    }
+    background: $link-water;
+    border-color: $link-water;
+    box-shadow: none;
+    color: $midnight;
+    margin-bottom: 2rem;
+  }
+}

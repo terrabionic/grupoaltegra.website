@@ -1,0 +1,19 @@
+.hero-section {
+  @extend %parent-centered;
+  height: 100%;
+  position: relative;
+
+  &:before {
+    @extend %ghost-nudged;
+  }
+
+  @include element(content) {
+    @extend %element-centered;
+    color: white;
+    font-size: 1rem;
+    position: relative;
+    z-index: 1;
+  }
+
+
+}

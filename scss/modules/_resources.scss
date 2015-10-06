@@ -1,0 +1,11 @@
+.resources {
+  background: $midnight;
+  color: white;
+  padding: 4rem 0;
+
+  @include element(title) {
+    color: white;
+    text-align: center;
+  }
+
+}

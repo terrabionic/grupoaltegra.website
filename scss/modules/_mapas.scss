@@ -1,0 +1,77 @@
+.mapas {
+  font-size: 0;
+  // position: relative;
+
+  // &:before {
+  //   @extend %pseudo-element;
+  //   background: red;
+  //   height: 100%;
+  //   left: 50%;
+  //   top: 0;
+  //   width: 1px;
+  // }
+
+  @include element(container) {
+    width: 50%;
+    display: inline-block;
+    height: 400px;
+    position: relative;
+
+    @include mediaquery(small) {
+      width: 100%;
+    }
+
+    .desc-mapa {
+      bottom: .5rem;
+      left: 0rem;
+      padding: 0rem;
+      position: absolute;
+      width: 100%;
+      z-index: 3;
+
+      a {
+        color: initial;
+      }
+
+      h5 {
+        color: $midnight;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding-right: 2rem;
+        padding-left: 2rem;
+        font-size: 23px;
+
+        @include mediaquery(small) {
+          text-align: left;
+        }
+      }
+
+      p {
+        padding-right: 2rem;
+        padding-left: 2rem;
+
+        @include mediaquery(768px) {
+          font-size: 16px;
+        }
+
+        @include mediaquery(small) {
+          font-size: 14px;
+          text-align: left;
+        }
+        // max-width: 273px;
+
+        &.telefonos {
+          span {
+            display: block;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+#map-canvas-pachuca,
+#map-canvas-queretaro {
+  height: 100%;
+}

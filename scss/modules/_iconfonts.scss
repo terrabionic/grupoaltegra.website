@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'icomoon';
+  src:url('../fonts/icomoon.eot?wla4mq');
+  src:url('../fonts/icomoon.eot?wla4mq#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?wla4mq') format('truetype'),
+      url('../fonts/icomoon.woff?wla4mq') format('woff'),
+      url('../fonts/icomoon.svg?wla4mq#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-up:before {
+  content: "\e800";
+}
+.icon-search:before {
+  content: "\e801";
+}
+.icon-educacion:before {
+  content: "\e802";
+}
+.icon-residencial:before {
+  content: "\e803";
+}
+.icon-corporativo:before {
+  content: "\e804";
+}
+.icon-gobierno:before {
+  content: "\e805";
+}
+
+
