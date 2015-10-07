@@ -1,4 +1,5 @@
 .enterprises {
+  margin-bottom: 2rem;
 
   @include element(item) {
     @extend %parent-centered;
