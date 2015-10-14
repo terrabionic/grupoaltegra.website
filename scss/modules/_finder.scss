@@ -18,5 +18,9 @@
     color: white;
     font-size: 18px;
     margin: 0;
+
+    @include mediaquery($small-breakpoint) {
+      font-size: 14px;
+    }
   }
 }

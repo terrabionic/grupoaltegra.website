@@ -1,0 +1,37 @@
+.list-blue {
+  list-style: none;
+
+  li {
+    position: relative;
+    &:before {
+      @extend %pseudo-element;
+      @include transform(scale(.75));
+      color: #6097c3;
+      content: "•";
+      font-family: $font-family-monospace;
+      left: -1.2em;
+      line-height: 0;
+      top: 50%;
+    }
+  }
+
+  a {
+    color: white !important;
+  }
+}
+
+.list-2-col {
+  font-size: 0;
+  li {
+    display: inline-block;
+    width: 50%;
+  }
+}
+
+
+.list-soluciones {
+  li {
+    font-size: 14px;
+    line-height: 2.5em;
+  }
+}

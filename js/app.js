@@ -40,9 +40,41 @@ jQuery(document).ready(function($) {
 
   // Values slider
   $('#values-slider').slick({
+    arrows: false,
     dots: true
   });
 
+  // Toggle menu
+  $('#open-menu').click(function(e) {
+    e.preventDefault();
+    $('#mega-menu').fadeIn();
+  });
+
+  $('#close-menu').click(function(e) {
+    e.preventDefault();
+    $('#mega-menu').fadeOut();
+  });
+
+  // Function to set the colors of the main nav
+  function setColorNav() {
+    var offset = $('#main-slider').height();
+    var $navContainer = $('#nav-container');
+    var navHeight = $navContainer.height();
+    var stateClass = 'white';
+
+    if ( $(window).scrollTop() >= (offset - navHeight) ) {
+      $navContainer.addClass(stateClass);
+    } else {
+      $navContainer.removeClass(stateClass);
+    }
+
+  }
+
+  setColorNav();
+
+  $(window).scroll(function() {
+    setColorNav();
+  });
 
   $(window).resize(function() {
     searchBgResponsive();

@@ -1,0 +1,92 @@
+.mega-menu {
+  display: none;
+  @extend %parent-centered;
+  @include linear-gradient(to bottom, #0c2144, #021126);
+  bottom: 0;
+  color: white;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  overflow: hidden;
+
+  @include mediaquery($medium-breakpoint) {
+    display: none !important;
+  }
+
+  &:before {
+    @extend %ghost-nudged;
+  }
+
+  @include element(close) {
+    font-size: 2rem;
+    position: absolute;
+    top: 1rem;
+    color: white !important;
+    right: 1rem;
+    text-align: center;
+
+    small {
+      display: block;
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+  }
+
+  @include element(content) {
+    @extend %element-centered;
+    font-size: 1rem;
+    max-width: 1200px;
+    // position: relative;
+    text-align: left;
+    width: 100%;
+  }
+
+  @include element(title) {
+    color: #6097c3;
+    margin: 0;
+    padding-left: 2rem;
+    text-transform: uppercase;
+  }
+
+  * {
+    outline: 0;
+  }
+
+  @include element(gradient-1) {
+    position: relative;
+    &:before {
+      @extend %pseudo-element;
+      @include linear-gradient(to top, transparent, #1e407d);
+      bottom: 0;
+      height: 500%;
+      right: 0;
+      width: 500%;
+    }
+  }
+
+  @include element(footer) {
+    border-top: 1px solid #6097c3;
+    clear: both;
+    font-size: 13px;
+    margin-left: 2rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    text-align: right;
+    text-transform: uppercase;
+
+    a {
+      display: inline-block;
+      margin-left: 1rem;
+      color: white !important;
+    }
+
+  }
+
+  .row {
+    max-width: 1200px;
+  }
+
+
+}

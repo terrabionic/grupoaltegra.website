@@ -4,6 +4,14 @@
   position: relative;
   width: 20%;
 
+  @include mediaquery($medium-breakpoint) {
+    width: 33.333%;
+  }
+
+  @include mediaquery($small-breakpoint) {
+    width: 100%;
+  }
+
   &:before {
     @extend %pseudo-element;
     height: 3rem;
@@ -43,5 +51,9 @@
   @include element(description) {
     font-size: 14px;
     text-align: center;
+  }
+
+  @include element(photo) {
+    width: 100%;
   }
 }
