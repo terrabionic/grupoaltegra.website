@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <title>Front Page | Grupo Altegra</title>
   <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/slick.css" />
@@ -9,6 +10,97 @@
   <link rel="stylesheet" href="css/app.css" />
 </head>
 <body>
+
+  <div id="nav-container" class="header-bar">
+    <a class="site-logo" href="#">
+      <span class="icon-logo"></span>
+    </a>
+
+    <a id="open-menu" class="toggle-menu" href="#">
+      <span class="icon-hamburger"></span>
+    </a>
+  </div>
+
+  <div id="mega-menu" class="mega-menu">
+    <a id="close-menu" class="mega-menu__close" href="#">
+      <span class="icon-close"></span>
+      <!--<small>Cerrar</small>-->
+    </a>
+    <div class="mega-menu__content">
+      <div class="row collapse">
+        <div class="medium-3 columns mega-menu__gradient-1">
+          <ul class="tabs-giros-comerciales tabs vertical" data-tab>
+            <li class="tab-title active"><a href="#panel11"><span class="icon-gobierno-alt"></span> Gobierno</a></li>
+            <li class="tab-title"><a href="#panel21"><span class="icon-corporativo-alt"></span> Corporativo</a></li>
+            <li class="tab-title"><a href="#panel31"><span class="icon-pyme-alt"></span> PyMe</a></li>
+            <li class="tab-title"><a href="#panel41"><span class="icon-educacion-alt"></span> Educación</a></li>
+          </ul>
+        </div>
+        <div class="medium-9 columns">
+          <h5 class="mega-menu__title">Nuestras soluciones</h5>
+          <div class="tabs-content">
+            <div class="content active" id="panel11">
+              <ul class="tabs-soluciones tabs" data-tab>
+                <li class="tab-title active"><a href="#panel1">Cómputo</a></li>
+                <li class="tab-title"><a href="#panel2">Automatización</a></li>
+                <li class="tab-title"><a href="#panel3">Telecomunicaciones</a></li>
+                <li class="tab-title"><a href="#panel4">Desarrollo</a></li>
+                <li class="tab-title"><a href="#panel5">Climatización</a></li>
+                <li class="tab-title"><a href="#panel6">Marketing Digital</a></li>
+              </ul>
+              <div class="tabs-content">
+                <div class="content active" id="panel1">
+                  <ul class="list-blue list-2-col list-spaced list-soluciones">
+                    <li><a href="#">Venta de equipo de cómputo</a></li>
+                    <li><a href="#">Soluciones de digitalización</a></li>
+                    <li><a href="#">Contrato de Consumibles</a></li>
+                    <li><a href="#">Servidores</a></li>
+                    <li><a href="#">Protección Eléctrica</a></li>
+                    <li><a href="#">Almacenamiento</a></li>
+                    <li><a href="#">Servcios administrados de impresión</a></li>
+                    <li><a href="#">Acondicionamiento de Site de Telecomunicaciones</a></li>
+                    <li><a href="#">Licenciamiento de Software</a></li>
+                    <li><a href="#">Soluciones de respaldo</a></li>
+                    <li><a href="#">Arrendamiento de equipo e infraestructura</a></li>
+                  </ul>
+                </div>
+                <div class="content" id="panel2">
+                  <p>This is the second panel of the basic tab example. This is the second panel of the basic tab example.</p>
+                </div>
+                <div class="content" id="panel3">
+                  <p>This is the third panel of the basic tab example. This is the third panel of the basic tab example.</p>
+                </div>
+                <div class="content" id="panel4">
+                  <p>This is the fourth panel of the basic tab example. This is the fourth panel of the basic tab example.</p>
+                </div>
+                <div class="content" id="panel5">
+                  <p>This is the 5 panel of the basic tab example. This is the fourth panel of the basic tab example.</p>
+                </div>
+                <div class="content" id="panel6">
+                  <p>This is the 6 panel of the basic tab example. This is the fourth panel of the basic tab example.</p>
+                </div>
+              </div>
+            </div>
+            <!--panel11-->
+            <div class="content" id="panel21">
+              <p>This is the second panel of the basic tab example. This is the second panel of the basic tab example.</p>
+            </div>
+            <div class="content" id="panel31">
+              <p>This is the third panel of the basic tab example. This is the third panel of the basic tab example.</p>
+            </div>
+            <div class="content" id="panel41">
+              <p>This is the fourth panel of the basic tab example. This is the fourth panel of the basic tab example.</p>
+            </div>
+          </div>
+          <div class="mega-menu__footer">
+            <a href="#">Valores</a>
+            <a href="#">Certificaciones</a>
+            <a href="#">Contacto</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div class="hero-section">
     <div id="main-slider" class="main-slider">
@@ -55,7 +147,7 @@
   <div class="certificates row">
     <h3 class="certificates__title">Certificaciones</h3>
     <div class="small-12 columns">
-      <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-5">
+      <ul class="small-block-grid-1 medium-block-grid-5">
         <li><img src="img/amazon-logo.png" alt="amazon"></li>
         <li><img src="img/google-apps-logo.png" alt="google"></li>
         <li><img src="img/ncomputing-logo.png" alt="ncomputing"></li>
@@ -67,18 +159,18 @@
 
   <div class="clients">
     <div class="row">
-      <div class="medium-4 columns">
-        <h3 class="clients__title">Nuestros clietes</h3>
+      <div class="large-4 columns">
+        <h3 class="clients__title">Nuestros clientes</h3>
         <p>Contamos con amplia experiencia en... nuestros clientes nos respaldan</p>
       </div>
-      <div class="medium-8 columns">
-        <ul class="small-block-grid-2 medium-block-grid-3">
-          <li><img src="img/amazon-logo.png" alt="amazon"></li>
-          <li><img src="img/google-apps-logo.png" alt="google"></li>
-          <li><img src="img/ncomputing-logo.png" alt="ncomputing"></li>
-          <li><img src="img/interwrite-logo.png" alt="interwrite"></li>
-          <li><img src="img/microsoft-logo.png" alt="microsoft"></li>
-          <li><img src="img/amazon-logo.png" alt="amazon"></li>
+      <div class="large-8 columns">
+        <ul class="clients-list small-block-grid-1 medium-block-grid-3">
+          <li class="clients-list__item"><img src="img/amazon-logo.png" alt="amazon"></li>
+          <li class="clients-list__item"><img src="img/google-apps-logo.png" alt="google"></li>
+          <li class="clients-list__item"><img src="img/ncomputing-logo.png" alt="ncomputing"></li>
+          <li class="clients-list__item"><img src="img/interwrite-logo.png" alt="interwrite"></li>
+          <li class="clients-list__item"><img src="img/microsoft-logo.png" alt="microsoft"></li>
+          <li class="clients-list__item"><img src="img/amazon-logo.png" alt="amazon"></li>
         </ul>
       </div>
     </div>

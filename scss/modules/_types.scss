@@ -3,6 +3,10 @@
   margin-bottom: 0;
   text-transform: uppercase;
 
+  @include mediaquery($small-breakpoint) {
+    padding-top: 2rem;
+  }
+
   @include element(item) {
     display: inline-block;
     margin: 0;
@@ -27,12 +31,26 @@
     margin: 0;
     position: static;
 
+    @include mediaquery($small-breakpoint) {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      text-align: left;
+    }
+
     li {
       font-size: 12px;
       height: auto;
       margin: 0 .5rem;
       vertical-align: bottom;
       width: auto;
+
+      @include mediaquery($small-breakpoint) {
+        @include transform(scale(.8));
+        margin: 0;
+        text-align: center;
+        width: 33.333%;
+      }
+
     }
   }
 
@@ -41,5 +59,6 @@
       font-size: 4rem;
     }
   }
+
 
 }

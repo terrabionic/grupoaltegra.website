@@ -17,29 +17,54 @@
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  @extend %better-font-rendering;
 }
 
+.icon-logo:before {
+  content: "\e80f";
+}
+.icon-close:before {
+  content: "\e80d";
+}
+.icon-hamburger:before {
+  content: "\e80e";
+}
+.icon-pyme-alt:before {
+  content: "\e802";
+}
+.icon-pyme:before {
+  content: "\e803";
+}
+.icon-educacion-alt:before {
+  content: "\e804";
+}
+.icon-residencial-alt:before {
+  content: "\e805";
+}
+.icon-corporativo-alt:before {
+  content: "\e807";
+}
+.icon-gobierno-alt:before {
+  content: "\e808";
+}
+.icon-educacion:before {
+  content: "\e809";
+}
+.icon-residencial:before {
+  content: "\e80a";
+}
+.icon-corporativo:before {
+  content: "\e80b";
+}
+.icon-gobierno:before {
+  content: "\e80c";
+}
 .icon-up:before {
   content: "\e800";
 }
 .icon-search:before {
   content: "\e801";
 }
-.icon-educacion:before {
-  content: "\e802";
+.icon-small-right:before {
+  content: "\e806";
 }
-.icon-residencial:before {
-  content: "\e803";
-}
-.icon-corporativo:before {
-  content: "\e804";
-}
-.icon-gobierno:before {
-  content: "\e805";
-}
-
-

@@ -1,0 +1,31 @@
+.clients-list {
+  position: relative;
+
+  @include element(item) {
+    border-right: 1px solid $periwinkle-gray;;
+    line-height: 100px;
+    padding: 0 !important;
+    text-align: center;
+
+    @include mediaquery($medium-breakpoint) {
+      border: none !important;
+    }
+
+    &:nth-of-type(n+4) {
+      border-top: 1px solid $periwinkle-gray;
+    }
+
+    &:nth-of-type(3n+3) {
+      border-right: none;
+    }
+
+
+    &:nth-child(n+3) {
+      @include mediaquery($small-breakpoint) {
+        display: none;
+      }
+    }
+
+  }
+
+}

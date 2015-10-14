@@ -4,6 +4,25 @@
   font-size: 13px;
   line-height: 2rem;
 
+  @include mediaquery($medium-breakpoint) {
+    text-align: center;
+  }
+
+  .row {
+    .row {
+      @include mediaquery($small-breakpoint) {
+        .columns {
+          float: left;
+          width: 50%;
+
+          +.columns {
+            float: right;
+          }
+        }
+      }
+    }
+  }
+
   a {
     color: white;
   }
@@ -12,6 +31,12 @@
     font-size: inherit;
     line-height: inherit;
     margin: 0;
+
+    @include mediaquery($small-breakpoint) {
+      line-height: 1rem;;
+      padding-top: 1rem;
+      margin-bottom: .5rem;
+    }
   }
 
 }

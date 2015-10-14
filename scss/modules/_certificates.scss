@@ -1,7 +1,18 @@
 .certificates {
   padding: 2rem 0;
+  text-align: center;
 
   @include element(title) {
     @extend %title-gray;
+  }
+
+  ul {
+    li {
+      &:nth-child(n+3) {
+        @include mediaquery($small-breakpoint) {
+          display: none;
+        }
+      }
+    }
   }
 }

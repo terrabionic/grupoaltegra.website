@@ -3,9 +3,21 @@
   color: $fountain-blue;
   padding: 4rem 0;
 
+  @include mediaquery($small-breakpoint) {
+    padding-bottom: 2rem;
+  }
+
   @include element(title) {
+    @include mediaquery($medium-breakpoint) {
     color: $bay-of-many;
     text-transform: uppercase;
+
+      &,
+      +p {
+        padding-left: 3rem;
+        padding-right: 3rem;
+      }
+    }
   }
 
 }

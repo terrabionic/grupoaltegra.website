@@ -1,0 +1,44 @@
+.tabs-giros-comerciales {
+  margin-top: 79px !important;
+  max-width: initial !important;
+  width: 100% !important;
+
+
+
+  [class^="icon-"] {
+    display: inline-block;
+    font-size: 2em;
+    margin-right: 1rem;
+    vertical-align: middle;
+  }
+
+  a {
+    background: none !important;
+    color: white !important;
+    font-size: inherit !important;
+    text-transform: uppercase;
+    position: relative;
+    padding-right: 0 !important;
+    padding-left: 25% !important;
+    &:after {
+      @extend %better-font-rendering;
+      @extend %pseudo-element;
+      content: "\e806";
+      font-family: icomoon;
+      right: 1rem;
+      top: 1.3em;
+    }
+  }
+
+  li {
+    border-bottom: 1px solid #6097c3;
+    font-size: 14px;
+  }
+
+  .active {
+    a {
+      color: #6097c3 !important;
+    }
+  }
+
+}
