@@ -1,0 +1,24 @@
+.mobile-nav {
+  height: 70px;
+  line-height: 70px;
+  display: none;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  @include mediaquery($medium-breakpoint) {
+    display: block;
+  }
+
+  a {
+    color: #061d3e;
+  }
+
+  .icon-logo-mobile {
+    font-size: 2rem;
+    line-height: 70px;
+  }
+
+  .icon-hamburguer {
+    line-height: 70px;
+  }
+}

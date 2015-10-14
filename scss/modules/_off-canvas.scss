@@ -1,0 +1,74 @@
+.off-canvas-list {
+  a {
+    background: transparent !important;
+    font-size: 13px;
+    text-transform: uppercase
+  }
+
+  .back {
+    a {
+      font-size: 10px !important;
+      text-transform: uppercase !important;
+      border-bottom: 1px solid #1f3e77 !important;
+      &:after {
+        display: none !important;
+      }
+
+      &:before {
+        @extend %better-font-rendering;
+        @include transform(scale(-1, 1));
+        content: "\e806";
+        display: inline-block;
+        font-family: icomoon;
+        font-size: 13px;
+        font-weight: normal;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  label {
+    font-size: 10px !important;
+  }
+
+  [class^="icon-"] {
+    display: inline-block;
+    font-size: 1.25rem;
+    margin-right: .5rem;
+    vertical-align: middle;
+  }
+
+  .has-submenu {
+    > a {
+      &:after {
+        @extend %better-font-rendering;
+        content: "\e806" !important;
+        display: inline-block;
+        font-family: icomoon;
+        vertical-align: middle;
+      }
+    }
+
+    ul {
+      li {
+        ul {
+          a {
+            text-transform: initial;
+          }
+        }
+      }
+    }
+  }
+
+
+  .extra-item {
+    a {
+      border: none;
+      color: #6097c3;
+    }
+  }
+
+  .hr {
+    border-top: 1px solid #1f3e77;
+  }
+}

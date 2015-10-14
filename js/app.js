@@ -2,6 +2,14 @@ jQuery(document).foundation();
 
 jQuery(document).ready(function($) {
 
+  // Main slider height
+  function setHeightHero() {
+    var offset = ( $(window).width() ) > 1024  ? 0 : 70;
+    $('#hero-section').height( $(window).height() - offset );
+  }
+
+  setHeightHero();
+
   // Deliver the correct image to main slider
   function setBackground(domEle) {
     var bgSmall = $(domEle).data('bg-small');
@@ -55,6 +63,15 @@ jQuery(document).ready(function($) {
     $('#mega-menu').fadeOut();
   });
 
+  // Offcanvas bingings
+  $(document).on('open.fndtn.offcanvas', '[data-offcanvas]', function () {
+    $('#toggle-offcanvas').children().toggleClass('icon-hamburger icon-close');
+  });
+
+  $(document).on('close.fndtn.offcanvas', '[data-offcanvas]', function () {
+    $('#toggle-offcanvas').children().toggleClass('icon-hamburger icon-close');
+  });
+
   // Function to set the colors of the main nav
   function setColorNav() {
     var offset = $('#main-slider').height();
@@ -78,6 +95,7 @@ jQuery(document).ready(function($) {
 
   $(window).resize(function() {
     searchBgResponsive();
+    setHeightHero();
   });
 
 });

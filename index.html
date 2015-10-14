@@ -11,6 +11,16 @@
 </head>
 <body>
 
+  <div class="mobile-nav">
+    <a href="#">
+      <span class="icon-logo-mobile"></span>
+    </a>
+
+    <a id="toggle-offcanvas" class="right left-off-canvas-toggle" href="#">
+      <span class="icon-hamburger"></span>
+    </a>
+  </div>
+
   <div id="nav-container" class="header-bar">
     <a class="site-logo" href="#">
       <span class="icon-logo"></span>
@@ -102,237 +112,336 @@
     </div>
   </div>
 
-  <div class="hero-section">
-    <div id="main-slider" class="main-slider">
-      <div class="main-slider__item" data-bg-big="img/gobierno-slide1.jpg" data-bg-small="img/gobierno-slide1.jpg" data-type="Gobierno" data-icon="icon-gobierno" data-bg-responsive >
-      </div>
-      <div class="main-slider__item" data-bg-big="img/corporativo-slide2.jpg" data-bg-small="img/corporativo-slide2.jpg" data-type="Corporativo" data-icon="icon-corporativo" data-bg-responsive >
-      </div>
-      <div class="main-slider__item" data-bg-big="img/corporativo-slide2.jpg" data-bg-small="img/corporativo-slide2.jpg" data-type="Corporativo" data-icon="icon-corporativo" data-bg-responsive >
-      </div>
-      <div class="main-slider__item" data-bg-big="img/corporativo-slide2.jpg" data-bg-small="img/corporativo-slide2.jpg" data-type="Corporativo" data-icon="icon-corporativo" data-bg-responsive >
-      </div>
-      <div class="main-slider__item" data-bg-big="img/corporativo-slide2.jpg" data-bg-small="img/corporativo-slide2.jpg" data-type="Corporativo" data-icon="icon-corporativo" data-bg-responsive >
-      </div>
-    </div>
-    <div class="hero-section__content">
-      <div id="types" class="types">
-      </div>
-      <div class="search-box">
-        <p class="search-box__title">Selecciona tu giro comercial</p>
-        <form class="finder input-group" action="#">
-          <input class="input-group__field" type="text" placeholder="Encuentra tu solución">
-          <div class="input-group-btn">
-            <button><i class="icon-search"></i></button>
+  <div class="off-canvas-wrap" data-offcanvas>
+    <div class="inner-wrap">
+
+      <!-- Off Canvas Menu -->
+      <aside class="left-off-canvas-menu">
+        <!-- whatever you want goes here -->
+        <ul class="off-canvas-list">
+          <li><label>Giro comercial</label></li>
+          <li class="has-submenu">
+            <a href="#">
+              <span class="icon-gobierno-alt"></span>
+              Gobierno
+            </a>
+            <ul class="left-submenu">
+              <li class="back"><a href="#">Giro comercial</a></li>
+              <li class="has-submenu">
+                <a href="#">Marketing digital</a>
+                <ul class="left-submenu">
+                  <li class="back"><a href="#">Marketing digital</a></li>
+                  <li><a href="#">Venta de equipo de cómputo</a></li>
+                  <li><a href="#">Contrato de consumibles</a></li>
+                  <li><a href="#">Servicios administrados de impresión</a></li>
+                  <li><a href="#">Licenciamiento de Software</a></li>
+                  <li><a href="#">Arrendamiento de equipo e infraestructura</a></li>
+                  <li><a href="#">Servidores</a></li>
+                  <li><a href="#">Acondicionamiento de Site de Telecomunicaciones</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a href="#">
+              <span class="icon-corporativo-alt"></span>
+              Corporativo
+            </a>
+            <ul class="left-submenu">
+              <li class="back"><a href="#">Giro comercial</a></li>
+              <li class="has-submenu"><a href="#">Link 2 w/ submenu</a>
+              </li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a href="#">
+              <span class="icon-pyme-alt"></span>
+              PyMe
+            </a>
+            <ul class="left-submenu">
+              <li class="back"><a href="#">Giro comercial</a></li>
+              <li class="has-submenu"><a href="#">Link 2 w/ submenu</a>
+              </li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a href="#">
+              <span class="icon-educacion-alt"></span>
+              Educación
+            </a>
+            <ul class="left-submenu">
+              <li class="back"><a href="#">Giro comercial</a></li>
+              <li class="has-submenu"><a href="#">Link 2 w/ submenu</a>
+              </li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a href="#">
+              <span class="icon-residencial"></span>
+              Residencial
+            </a>
+            <ul class="left-submenu">
+              <li class="back"><a href="#">Giro comercial</a></li>
+              <li class="has-submenu"><a href="#">Link 2 w/ submenu</a>
+              </li>
+            </ul>
+          </li>
+          <li class="extra-item">
+            <a href="#">Certificaciones</a>
+          </li>
+          <li class="extra-item">
+            <a href="#">Contacto</a>
+          </li>
+          <li class="extra-item">
+            <a href="#">Mapa de sitio</a>
+          </li>
+          <li class="extra-item">
+            <a href="#">Aviso de privacidad</a>
+          </li>
+          <li class="hr"></li>
+        </ul>
+      </aside>
+
+      <!-- main content goes here -->
+      <div id="hero-section" class="hero-section">
+        <div id="main-slider" class="main-slider">
+          <div class="main-slider__item" data-bg-big="img/gobierno-slide1.jpg" data-bg-small="img/gobierno-slide1.jpg" data-type="Gobierno" data-icon="icon-gobierno" data-bg-responsive >
           </div>
-        </form>
-      </div>
-    </div>
-  </div>
-
-  <div class="our-values row">
-    <div class="medium-8 medium-centered columns">
-      <h3 class="our-values__title">Nuestros valores</h3>
-      <div id="values-slider" class="slider-values">
-        <div class="value">
-          <p><strong>Integridad:</strong> tempus molestie lorem et dignissim. Vestibulom id nibh vulputate, ultrices elit eget, molestie erat. Nulla sem est, lobortis sit amet laoreet sed, porta id odio.</p>
+          <div class="main-slider__item" data-bg-big="img/corporativo-slide2.jpg" data-bg-small="img/corporativo-slide2.jpg" data-type="Corporativo" data-icon="icon-corporativo" data-bg-responsive >
+          </div>
+          <div class="main-slider__item" data-bg-big="img/corporativo-slide2.jpg" data-bg-small="img/corporativo-slide2.jpg" data-type="Corporativo" data-icon="icon-corporativo" data-bg-responsive >
+          </div>
+          <div class="main-slider__item" data-bg-big="img/corporativo-slide2.jpg" data-bg-small="img/corporativo-slide2.jpg" data-type="Corporativo" data-icon="icon-corporativo" data-bg-responsive >
+          </div>
+          <div class="main-slider__item" data-bg-big="img/corporativo-slide2.jpg" data-bg-small="img/corporativo-slide2.jpg" data-type="Corporativo" data-icon="icon-corporativo" data-bg-responsive >
+          </div>
         </div>
-        <div class="value">
-          <p><strong>Integridad:</strong> tempus molestie lorem et dignissim. Vestibulom id nibh vulputate, ultrices elit eget, molestie erat. Nulla sem est, lobortis sit amet laoreet sed, porta id odio.</p>
+        <div class="hero-section__content">
+          <div id="types" class="types">
+          </div>
+          <div class="search-box">
+            <p class="search-box__title">Selecciona tu giro comercial</p>
+            <form class="finder input-group" action="#">
+              <input class="input-group__field" type="text" placeholder="Encuentra tu solución">
+              <div class="input-group-btn">
+                <button><i class="icon-search"></i></button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
 
-  <div class="certificates row">
-    <h3 class="certificates__title">Certificaciones</h3>
-    <div class="small-12 columns">
-      <ul class="small-block-grid-1 medium-block-grid-5">
-        <li><img src="img/amazon-logo.png" alt="amazon"></li>
-        <li><img src="img/google-apps-logo.png" alt="google"></li>
-        <li><img src="img/ncomputing-logo.png" alt="ncomputing"></li>
-        <li><img src="img/interwrite-logo.png" alt="interwrite"></li>
-        <li><img src="img/microsoft-logo.png" alt="microsoft"></li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="clients">
-    <div class="row">
-      <div class="large-4 columns">
-        <h3 class="clients__title">Nuestros clientes</h3>
-        <p>Contamos con amplia experiencia en... nuestros clientes nos respaldan</p>
+      <div class="our-values row">
+        <div class="medium-8 medium-centered columns">
+          <h3 class="our-values__title">Nuestros valores</h3>
+          <div id="values-slider" class="slider-values">
+            <div class="value">
+              <p><strong>Integridad:</strong> tempus molestie lorem et dignissim. Vestibulom id nibh vulputate, ultrices elit eget, molestie erat. Nulla sem est, lobortis sit amet laoreet sed, porta id odio.</p>
+            </div>
+            <div class="value">
+              <p><strong>Integridad:</strong> tempus molestie lorem et dignissim. Vestibulom id nibh vulputate, ultrices elit eget, molestie erat. Nulla sem est, lobortis sit amet laoreet sed, porta id odio.</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="large-8 columns">
-        <ul class="clients-list small-block-grid-1 medium-block-grid-3">
-          <li class="clients-list__item"><img src="img/amazon-logo.png" alt="amazon"></li>
-          <li class="clients-list__item"><img src="img/google-apps-logo.png" alt="google"></li>
-          <li class="clients-list__item"><img src="img/ncomputing-logo.png" alt="ncomputing"></li>
-          <li class="clients-list__item"><img src="img/interwrite-logo.png" alt="interwrite"></li>
-          <li class="clients-list__item"><img src="img/microsoft-logo.png" alt="microsoft"></li>
-          <li class="clients-list__item"><img src="img/amazon-logo.png" alt="amazon"></li>
+
+      <div class="certificates row">
+        <h3 class="certificates__title">Certificaciones</h3>
+        <div class="small-12 columns">
+          <ul class="small-block-grid-1 medium-block-grid-5">
+            <li><img src="img/amazon-logo.png" alt="amazon"></li>
+            <li><img src="img/google-apps-logo.png" alt="google"></li>
+            <li><img src="img/ncomputing-logo.png" alt="ncomputing"></li>
+            <li><img src="img/interwrite-logo.png" alt="interwrite"></li>
+            <li><img src="img/microsoft-logo.png" alt="microsoft"></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="clients">
+        <div class="row">
+          <div class="large-4 columns">
+            <h3 class="clients__title">Nuestros clientes</h3>
+            <p>Contamos con amplia experiencia en... nuestros clientes nos respaldan</p>
+          </div>
+          <div class="large-8 columns">
+            <ul class="clients-list small-block-grid-1 medium-block-grid-3">
+              <li class="clients-list__item"><img src="img/amazon-logo.png" alt="amazon"></li>
+              <li class="clients-list__item"><img src="img/google-apps-logo.png" alt="google"></li>
+              <li class="clients-list__item"><img src="img/ncomputing-logo.png" alt="ncomputing"></li>
+              <li class="clients-list__item"><img src="img/interwrite-logo.png" alt="interwrite"></li>
+              <li class="clients-list__item"><img src="img/microsoft-logo.png" alt="microsoft"></li>
+              <li class="clients-list__item"><img src="img/amazon-logo.png" alt="amazon"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="resources">
+        <div class="row">
+          <div class="medium-9 medium-centered column">
+            <h4 class="resources__title">Suministramos recursos ilimitados para construir cominicación eficiente entre sus nucleos de aministración y gestión</h4>
+          </div>
+        </div>
+        <ul class="resources-list">
+          <li class="resource">
+            <div class="resource__overlay"></div>
+            <img class="resource__photo" src="img/img-1.jpg" alt="image-1">
+            <div class="resource__content">
+              <p class="resource__title">Gobierno</p>
+              <p class="resource__description">Pellentesque habitant mobi thistique senectus et netus et malesuada</p>
+            </div>
+          </li>
+          <li class="resource">
+            <div class="resource__overlay"></div>
+            <img class="resource__photo" src="img/img-1.jpg" alt="image-1">
+            <div class="resource__content">
+              <p class="resource__title">Corporativo</p>
+              <p class="resource__description">Pellentesque habitant mobi thistique senectus et netus et malesuada</p>
+            </div>
+          </li>
+          <li class="resource">
+            <div class="resource__overlay"></div>
+            <img class="resource__photo" src="img/img-1.jpg" alt="image-1">
+            <div class="resource__content">
+              <p class="resource__title">PyMe</p>
+              <p class="resource__description">Pellentesque habitant mobi thistique senectus et netus et malesuada</p>
+            </div>
+          </li>
+          <li class="resource">
+            <div class="resource__overlay"></div>
+            <img class="resource__photo" src="img/img-1.jpg" alt="image-1">
+            <div class="resource__content">
+              <p class="resource__title">Residencial</p>
+              <p class="resource__description">Pellentesque habitant mobi thistique senectus et netus et malesuada</p>
+            </div>
+          </li>
+          <li class="resource">
+            <div class="resource__overlay"></div>
+            <img class="resource__photo" src="img/img-1.jpg" alt="image-1">
+            <div class="resource__content">
+              <p class="resource__title">Educación</p>
+              <p class="resource__description">Pellentesque habitant mobi thistique senectus et netus et malesuada</p>
+            </div>
+          </li>
         </ul>
       </div>
-    </div>
-  </div>
 
-  <div class="resources">
-    <div class="row">
-      <div class="medium-9 medium-centered column">
-        <h4 class="resources__title">Suministramos recursos ilimitados para construir cominicación eficiente entre sus nucleos de aministración y gestión</h4>
+      <div class="contact-form" style="background: url(img/bg-form.jpg)">
+        <div class="wpcf7">
+          <form action="#">
+            <div class="row text-center">
+              <div class="medium-8 medium-centered columns">
+                <h3 class="color-midnight text-uppercase">Contacto</h3>
+                <p class="color-midnight">Nos interesa tu opinión, llena el siguiente formulario y nos pondremos en contacto contigo.</p>
+                <p class="smaller">Los campos marcados con * son obligatorios</p>
+                <br>
+              </div>
+            </div>
+            <div class="row">
+              <div class="medium-4 columns">
+                <span><input type="text" placeholder="Nombre"></span>
+              </div>
+              <div class="medium-4 columns">
+                <span><input type="text" placeholder="Empresa"></span>
+              </div>
+              <div class="medium-4 columns">
+                <span><input type="text" placeholder="Email"></span>
+              </div>
+              <div class="small-12 columns">
+                <span><textarea rows="3" placeholder="Mensaje"></textarea></span>
+              </div>
+              <div class="small-12 columns">
+                <input class="button success expand" type="submit">
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
-    </div>
-    <ul class="resources-list">
-      <li class="resource">
-        <div class="resource__overlay"></div>
-        <img class="resource__photo" src="img/img-1.jpg" alt="image-1">
-        <div class="resource__content">
-          <p class="resource__title">Gobierno</p>
-          <p class="resource__description">Pellentesque habitant mobi thistique senectus et netus et malesuada</p>
-        </div>
-      </li>
-      <li class="resource">
-        <div class="resource__overlay"></div>
-        <img class="resource__photo" src="img/img-1.jpg" alt="image-1">
-        <div class="resource__content">
-          <p class="resource__title">Corporativo</p>
-          <p class="resource__description">Pellentesque habitant mobi thistique senectus et netus et malesuada</p>
-        </div>
-      </li>
-      <li class="resource">
-        <div class="resource__overlay"></div>
-        <img class="resource__photo" src="img/img-1.jpg" alt="image-1">
-        <div class="resource__content">
-          <p class="resource__title">PyMe</p>
-          <p class="resource__description">Pellentesque habitant mobi thistique senectus et netus et malesuada</p>
-        </div>
-      </li>
-      <li class="resource">
-        <div class="resource__overlay"></div>
-        <img class="resource__photo" src="img/img-1.jpg" alt="image-1">
-        <div class="resource__content">
-          <p class="resource__title">Residencial</p>
-          <p class="resource__description">Pellentesque habitant mobi thistique senectus et netus et malesuada</p>
-        </div>
-      </li>
-      <li class="resource">
-        <div class="resource__overlay"></div>
-        <img class="resource__photo" src="img/img-1.jpg" alt="image-1">
-        <div class="resource__content">
-          <p class="resource__title">Educación</p>
-          <p class="resource__description">Pellentesque habitant mobi thistique senectus et netus et malesuada</p>
-        </div>
-      </li>
-    </ul>
-  </div>
 
-  <div class="contact-form" style="background: url(img/bg-form.jpg)">
-    <div class="wpcf7">
-      <form action="#">
+      <div class="mapas">
+        <div class="mapas__container">
+          <div id="map-canvas-pachuca" data-lat="20.1010608" data-lng="-98.75913109999999"></div>
+          <div class="desc-mapa text-left">
+            <h5 class="bolder" data-reveal="#modal-pachuca">PACHUCA</h5>
+            <p class="direccion">Blv. Felipe Ángeles No. 1306. 2do. Piso.<br>
+            Colonia Carlos Rovirosa | C.P. 42043<br>
+            <strong>Pachuca, Hidalgo. México</strong></p>
+            <p class="telefonos"><a href="tel:01771104585">01 (771) 710 45 85</a> | <a href="tel:7107048">710 7048</a></p>
+          </div>
+        </div>
+        <div class="mapas__container">
+          <div id="map-canvas-queretaro" data-lat="20.5887932" data-lng="-100.38988810000001"></div>
+          <div class="desc-mapa text-right">
+            <h5 class="bolder" data-reveal="#modal-queretaro">QUERETARO</h5>
+            <p class="direccion">Vicente Acosta No. 52 Esq. Hilario<br>
+            Frías y Soto Colonia El ensueño.<br>
+            Querétaro, Querétaro. México</p>
+            <p class="telefonos"><a href="tel:01771104585">01 (771) 710 40 48</a> | <a href="tel:7107048">710 7047</a></p>
+          </div>
+        </div>
+      </div>
+
+      <footer class="site-footer">
         <div class="row text-center">
-          <div class="medium-8 medium-centered columns">
-            <h3 class="color-midnight text-uppercase">Contacto</h3>
-            <p class="color-midnight">Nos interesa tu opinión, llena el siguiente formulario y nos pondremos en contacto contigo.</p>
-            <p class="smaller">Los campos marcados con * son obligatorios</p>
-            <br>
+          <div class="small-12 columns">
+            <img class="site-footer__logo" src="img/logo--white.svg" alt="altegra">
           </div>
         </div>
+
         <div class="row">
-          <div class="medium-4 columns">
-            <span><input type="text" placeholder="Nombre"></span>
-          </div>
-          <div class="medium-4 columns">
-            <span><input type="text" placeholder="Empresa"></span>
-          </div>
-          <div class="medium-4 columns">
-            <span><input type="text" placeholder="Email"></span>
-          </div>
           <div class="small-12 columns">
-            <span><textarea rows="3" placeholder="Mensaje"></textarea></span>
-          </div>
-          <div class="small-12 columns">
-            <input class="button success expand" type="submit">
+              <h5>Forman parte del grupo</h5>
+              <ul class="enterprises small-block-grid-2 medium-block-grid-3 large-block-grid-6">
+                <li class="enterprises__item">
+                  <a href="#"><img src="img/logo-altegra.png" alt="alegra"></a>
+                </li>
+                <li class="enterprises__item">
+                  <a href="#"><img src="img/logo-senzor.png" alt="senzor"></a>
+                </li>
+                <li class="enterprises__item">
+                  <a href="#"><img src="img/logo-innotic.png" alt="innotic"></a>
+                </li>
+                <li class="enterprises__item">
+                  <a href="#"><img src="img/logo-airus.png" alt="airus"></a>
+                </li>
+                <li class="enterprises__item">
+                  <a href="#"><img src="img/logo-unilogix.png" alt="unilogix"></a>
+                </li>
+                <li class="enterprises__item">
+                  <a href="#"><img src="img/logo-terrabionic.png" alt="terrabionic"></a>
+                </li>
+              </ul>
           </div>
         </div>
-      </form>
-    </div>
-  </div>
 
-  <div class="mapas">
-    <div class="mapas__container">
-      <div id="map-canvas-pachuca" data-lat="20.1010608" data-lng="-98.75913109999999"></div>
-      <div class="desc-mapa text-left">
-        <h5 class="bolder" data-reveal="#modal-pachuca">PACHUCA</h5>
-        <p class="direccion">Blv. Felipe Ángeles No. 1306. 2do. Piso.<br>
-        Colonia Carlos Rovirosa | C.P. 42043<br>
-        <strong>Pachuca, Hidalgo. México</strong></p>
-        <p class="telefonos"><a href="tel:01771104585">01 (771) 710 45 85</a> | <a href="tel:7107048">710 7048</a></p>
-      </div>
-    </div>
-    <div class="mapas__container">
-      <div id="map-canvas-queretaro" data-lat="20.5887932" data-lng="-100.38988810000001"></div>
-      <div class="desc-mapa text-right">
-        <h5 class="bolder" data-reveal="#modal-queretaro">QUERETARO</h5>
-        <p class="direccion">Vicente Acosta No. 52 Esq. Hilario<br>
-        Frías y Soto Colonia El ensueño.<br>
-        Querétaro, Querétaro. México</p>
-        <p class="telefonos"><a href="tel:01771104585">01 (771) 710 40 48</a> | <a href="tel:7107048">710 7047</a></p>
-      </div>
-    </div>
-  </div>
-
-  <footer class="site-footer">
-    <div class="row text-center">
-      <div class="small-12 columns">
-        <img class="site-footer__logo" src="img/logo--white.svg" alt="altegra">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="small-12 columns">
-          <h5>Forman parte del grupo</h5>
-          <ul class="enterprises small-block-grid-2 medium-block-grid-3 large-block-grid-6">
-            <li class="enterprises__item">
-              <a href="#"><img src="img/logo-altegra.png" alt="alegra"></a>
-            </li>
-            <li class="enterprises__item">
-              <a href="#"><img src="img/logo-senzor.png" alt="senzor"></a>
-            </li>
-            <li class="enterprises__item">
-              <a href="#"><img src="img/logo-innotic.png" alt="innotic"></a>
-            </li>
-            <li class="enterprises__item">
-              <a href="#"><img src="img/logo-airus.png" alt="airus"></a>
-            </li>
-            <li class="enterprises__item">
-              <a href="#"><img src="img/logo-unilogix.png" alt="unilogix"></a>
-            </li>
-            <li class="enterprises__item">
-              <a href="#"><img src="img/logo-terrabionic.png" alt="terrabionic"></a>
-            </li>
-          </ul>
-      </div>
-    </div>
-
-    <div class="copy">
-      <div class="row">
-        <div class="large-7 columns">
-          <p>grupo altegra 2015. Todos los derechos reservados. <a href="#">Aviso de privacidad</a></p>
-        </div>
-        <div class="large-5 columns">
+        <div class="copy">
           <div class="row">
-            <div class="medium-6 columns">
-              <a href="#">contacto@grupoaltegra.com</a>
+            <div class="large-7 columns">
+              <p>grupo altegra 2015. Todos los derechos reservados. <a href="#">Aviso de privacidad</a></p>
             </div>
-            <div class="medium-6 columns">
-              <a href="#">Mapa de Sitio</a>
+            <div class="large-5 columns">
+              <div class="row">
+                <div class="medium-6 columns">
+                  <a href="#">contacto@grupoaltegra.com</a>
+                </div>
+                <div class="medium-6 columns">
+                  <a href="#">Mapa de Sitio</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
 
-  </footer>
+      </footer>
+
+      <!-- close the off-canvas menu -->
+      <a class="exit-off-canvas"></a>
+
+    </div>
+  </div>
+
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="js/vendor/foundation.js"></script>

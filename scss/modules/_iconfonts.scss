@@ -20,6 +20,9 @@
   @extend %better-font-rendering;
 }
 
+.icon-logo-mobile:before {
+  content: "\e810";
+}
 .icon-logo:before {
   content: "\e80f";
 }
