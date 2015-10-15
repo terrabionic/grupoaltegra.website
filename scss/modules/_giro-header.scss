@@ -1,0 +1,93 @@
+.giro-header {
+  @extend %full-bg;
+  color: white;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  font-size: 0;
+  min-height: 353px;
+
+  @include element(icon) {
+    border-right: 1px solid white;
+    display: inline-block;
+    font-size: 4rem;
+    line-height: 1;
+    padding: 0;
+    vertical-align: middle;
+    width: 20%;
+
+    @include mediaquery(768px) {
+      display: block;
+      border: none;
+      margin: 0 auto;
+      margin-bottom: 2rem;
+      width: 100%;
+    }
+
+    small {
+      font-size: 20px;
+      display: block;
+      text-transform: uppercase;
+      margin-top: .5em;
+      @include mediaquery($small-breakpoint) {
+        font-size: 18px;
+      }
+    }
+  }
+
+  @include element(subtitle) {
+    display: inline-block;
+    vertical-align: middle;
+    width: 80%;
+
+    @include mediaquery($small-breakpoint) {
+      width: 100%;
+    }
+
+    p {
+      font-size: 23px;
+      margin: 0;
+      padding-left: 7%;
+      text-align: left;
+      @include mediaquery($medium-breakpoint) {
+        padding-right: 5%;
+      }
+
+      @include mediaquery(768px) {
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      @include mediaquery($small-breakpoint) {
+        font-size: 18px;
+      }
+    }
+
+  }
+
+  @include element(description) {
+    margin-top: 2rem;
+    text-align: left;
+    padding-left: 5%;
+    padding-right: 0%;
+
+    @include mediaquery($medium-breakpoint) {
+      padding-right: 5%;
+    }
+
+    @include mediaquery(768px) {
+      padding-left: 0;
+      padding-right: 0;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @include mediaquery($small-breakpoint) {
+      width: 100%;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+body {
+  &.internal {
+    padding-top: 80px;
+    @include mediaquery($medium-breakpoint) {
+      padding-top: 0px;
+    }
+  }
+}

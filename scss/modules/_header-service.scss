@@ -1,0 +1,48 @@
+.header-service {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 2rem;
+
+  @include mediaquery(768px) {
+    width: 100%;
+  }
+
+  @include element(img) {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 1rem;
+    max-width: 4rem;
+
+    @include mediaquery(768px) {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 1rem;
+    }
+  }
+
+  @include element(title) {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+
+    @include mediaquery(768px) {
+      text-align: center;
+    }
+
+    h1 {
+      text-transform: uppercase;
+      color: #1f3e77;
+    }
+
+    h2 {
+      color: #6097c3;
+      font-weight: normal;
+    }
+
+    h1,h2 {
+      margin-bottom: 0;
+    }
+  }
+
+}

@@ -1,0 +1,33 @@
+.empresa {
+  color: white;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  @include element(title) {
+    border-bottom: 1px solid white;
+    color: white;
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+    padding-bottom: 2rem;
+    padding-right: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 220px;
+    width: 100%;
+
+    @include mediaquery(768px) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .columns {
+    @include mediaquery(768px) {
+      width: 100%;
+    }
+  }
+}

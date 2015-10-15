@@ -1,0 +1,13 @@
+.breadcrumbs {
+  font-size: 13px;
+  margin-bottom: 2rem;
+
+  @include modifier(white) {
+    font-size: 13px;
+    margin-bottom: 2rem;
+
+    a {
+      color: white;
+    }
+  }
+}

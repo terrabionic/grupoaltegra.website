@@ -1,0 +1,32 @@
+.related-services {
+  background: #ededed;
+  text-align: center;
+  padding-top: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  @include element(title) {
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #d7d7d7;
+    padding-bottom: 2rem;
+    color: #021024;
+  }
+
+  @include element(item) {
+    img {
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+
+    h4 {
+      color: #6097c3;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: #1f3e77;
+    }
+  }
+
+}
